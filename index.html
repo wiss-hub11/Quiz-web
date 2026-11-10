@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Interaktif Sejarah: Demokrasi Terpimpin (1959-1967)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- 1. Screen Selamat Datang -->
+        <div id="welcome-screen" class="screen active welcome-screen">
+            <h1>Kuis Sejarah Indonesia</h1>
+            <p>Uji pemahaman Anda mengenai materi <strong>Demokrasi Terpimpin hingga Runtuhnya Orde Lama (1959–1967)</strong> melalui 10 soal pilihan ganda interaktif.</p>
+            <button id="start-btn" class="btn" style="width: 100%;">Mulai Kuis</button>
+        </div>
+
+        <!-- 2. Screen Kuis / Soal -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <span class="question-counter" id="question-counter">Soal 1 dari 10</span>
+                <span class="timer" id="timer">Waktu: 30s</span>
+            </div>
+            <div class="question-text" id="question-text">Pertanyaan akan muncul di sini...</div>
+            <ul class="options-list" id="options-list">
+                <!-- Pilihan opsi dimasukkan via JavaScript -->
+            </ul>
+            <div class="quiz-footer">
+                <button id="next-btn" class="btn" disabled>Selanjutnya</button>
+            </div>
+        </div>
+
+        <!-- 3. Screen Hasil Akhir -->
+        <div id="result-screen" class="screen result-screen">
+            <h2>Kuis Selesai!</h2>
+            <p>Skor Akhir Anda:</p>
+            <div class="score-card" id="final-score">0 / 10</div>
+            <p class="result-message" id="result-message">Kerja bagus!</p>
+            <button id="restart-btn" class="btn">Ulangi Kuis</button>
+        </div>
+    </div>
+
+    <!-- Menghubungkan file JavaScript eksternal -->
+    <script src="app.js"></script>
+</body>
+</html>
